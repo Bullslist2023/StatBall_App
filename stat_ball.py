@@ -1,6 +1,6 @@
 # app.py
 """
-StatBall - Análise de Estatística Esportiva (v2.0)
+StatBall - Análise de Estatística Esportiva - Versão 3
 Atualizações:
 - Interpretação Automática dos Insights (tom misto: técnico + narrativo)
 - Texto explicativo logo abaixo das métricas pp
@@ -20,7 +20,7 @@ from PIL import Image
 import datetime
 
 # ----------------------- Page config -----------------------
-st.set_page_config(page_title="🖥️StatBall - Análise de Estatística Esportiva⚽",
+st.set_page_config(page_title="🏆StatBall - Análise de Estatística Esportiva",
                    page_icon="⚽",
                    layout="wide")
 
@@ -47,8 +47,8 @@ h1,h2,h3 { color: var(--emerald); }
 # ----------------------- Header / logo -----------------------
 colh1, colh2 = st.columns([0.82, 0.18])
 with colh1:
-    st.title("🖥️StatBall — Análise de Estatística Esportiva⚽")
-    st.markdown("**Distribuição de Poisson** • Probabilidades 0→10, P(X≥5) por evento, comparação entre times, interpretação automática (técnico + narrativo).")
+    st.title("🏆StatBall — Análise de Estatística Esportiva")
+    st.markdown("**Distribuição de Poisson** • Probabilidades 0→10, P(X≥5) por evento, isto é probabilidade de evento aleatório X assumir um valor maior ou igual a 5. A seguir veja também comparação entre times, interpretação automática e conselhos técnico e narrativo.")
 with colh2:
     logo_file = st.file_uploader("Upload do logotipo (opcional)", type=['png','jpg','jpeg'])
     if logo_file:
@@ -66,17 +66,17 @@ c1, c2 = st.columns(2)
 with c1:
     time_a = st.text_input("Nome do Time A", "Time A")
     total_matches_a = st.number_input("Total de jogos (A) usados para médias", min_value=0, max_value=500, value=20, step=1)
-    media_gols_a = st.number_input("⚽ Média de Gols (A)", min_value=0.0, max_value=20.0, value=1.8, step=0.1)
-    media_cart_a = st.number_input("🟨 Média de Cartões (A)", min_value=0.0, max_value=20.0, value=2.3, step=0.1)
-    media_final_a = st.number_input("🎯 Média de Finalizações (A)", min_value=0.0, max_value=100.0, value=13.4, step=0.1)
-    media_esc_a = st.number_input("🚩 Média de Escanteios (A)", min_value=0.0, max_value=50.0, value=6.2, step=0.1)
+    media_gols_a = st.number_input("⚽ Média de Gols (A)", min_value=0.0, max_value=20.0, value=0.0, step=0.1)
+    media_cart_a = st.number_input("🟨 Média de Cartões (A)", min_value=0.0, max_value=20.0, value=0.0, step=0.1)
+    media_final_a = st.number_input("🎯 Média de Finalizações (A)", min_value=0.0, max_value=100.0, value=0.0, step=0.1)
+    media_esc_a = st.number_input("🚩 Média de Escanteios (A)", min_value=0.0, max_value=50.0, value=0.0, step=0.1)
 with c2:
     time_b = st.text_input("Nome do Time B", "Time B")
-    total_matches_b = st.number_input("Total de jogos (B) usados para médias", min_value=0, max_value=500, value=18, step=1)
-    media_gols_b = st.number_input("⚽ Média de Gols (B)", min_value=0.0, max_value=20.0, value=1.5, step=0.1)
-    media_cart_b = st.number_input("🟨 Média de Cartões (B)", min_value=0.0, max_value=20.0, value=2.0, step=0.1)
-    media_final_b = st.number_input("🎯 Média de Finalizações (B)", min_value=0.0, max_value=100.0, value=12.9, step=0.1)
-    media_esc_b = st.number_input("🚩 Média de Escanteios (B)", min_value=0.0, max_value=50.0, value=5.8, step=0.1)
+    total_matches_b = st.number_input("Total de jogos (B) usados para médias", min_value=0, max_value=500, value=0.0, step=1)
+    media_gols_b = st.number_input("⚽ Média de Gols (B)", min_value=0.0, max_value=20.0, value=0.0, step=0.1)
+    media_cart_b = st.number_input("🟨 Média de Cartões (B)", min_value=0.0, max_value=20.0, value=0.0, step=0.1)
+    media_final_b = st.number_input("🎯 Média de Finalizações (B)", min_value=0.0, max_value=100.0, value=0.0, step=0.1)
+    media_esc_b = st.number_input("🚩 Média de Escanteios (B)", min_value=0.0, max_value=50.0, value=0.0, step=0.1)
 
 st.markdown(f"<div class='small-muted'>Nota: médias baseadas em {total_matches_a} jogos (Time A) e {total_matches_b} jogos (Time B). Amostras maiores aumentam confiança nas estimativas.</div>", unsafe_allow_html=True)
 st.divider()
@@ -461,7 +461,8 @@ st.divider()
 # ----------------------- Footer -----------------------
 st.markdown("""
 <div style="width:100%; text-align:center; padding:10px 0; color:#444; border-top:1px solid #e6e6e6;">
-    Desenvolvido por <b>Juan Santos</b> — Projeto iniciado em <b>2025</b> • StatBall v2.0
+    Desenvolvido por <b>Juan Santos</b> — Projeto iniciado em <b>2025</b> • StatBall v3.0
 </div>
 """, unsafe_allow_html=True)
 a
+
