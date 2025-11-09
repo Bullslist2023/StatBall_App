@@ -461,9 +461,10 @@ st.divider()
 # ----------------------- Footer -----------------------
 st.markdown("""
 <div style="width:100%; text-align:center; padding:10px 0; color:#444; border-top:1px solid #e6e6e6;">
-    Desenvolvido por <b>Juan Santos</b> — Projeto iniciado em <b>2025</b> • StatBall v2.0
+    Desenvolvido por <b>Juan Santos</b> — Projeto iniciado em <b>2025</b> • StatBall v3.0 - Tecnologia ZIP4 Computers
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
