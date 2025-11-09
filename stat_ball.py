@@ -21,7 +21,7 @@ import datetime
 
 # ----------------------- Page config -----------------------
 st.set_page_config(page_title="🏆StatBall - Análise de Estatística Esportiva",
-                   page_icon="⚽",
+                   page_icon="🏆",
                    layout="wide")
 
 # ----------------------- Theme (verde-esmeralda vibrante) -----------------------
@@ -464,6 +464,7 @@ st.markdown("""
     Desenvolvido por <b>Juan Santos</b> — Projeto iniciado em <b>2025</b> • StatBall v3.0 - Tecnologia ZIP4 Computers
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
