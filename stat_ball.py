@@ -20,7 +20,7 @@ from PIL import Image
 import datetime
 
 # ----------------------- Page config -----------------------
-st.set_page_config(page_title="🏆StatBall - Análise de Estatística Esportiva",
+st.set_page_config(page_title="StatBall - Análise de Estatística Esportiva",
                    page_icon="🏆",
                    layout="wide")
 
@@ -464,6 +464,7 @@ st.markdown("""
     Desenvolvido por <b>Juan Santos</b> — Projeto iniciado em <b>2025</b> • StatBall v3.0 - Tecnologia ZIP4 Computers
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
