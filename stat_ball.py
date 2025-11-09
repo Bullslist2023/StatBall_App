@@ -464,7 +464,6 @@ st.markdown("""
     Desenvolvido por <b>Juan Santos</b> — Projeto iniciado em <b>2025</b> • StatBall v2.0
 </div>
 """, unsafe_allow_html=True)
-a
-""")
+
 
 
