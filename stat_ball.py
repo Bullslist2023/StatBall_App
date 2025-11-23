@@ -103,7 +103,7 @@ col1, col2 = st.columns([0.82, 0.18])
 with col1:
     st.title("🏆 StatBall v4 — Análise Estatística Esportiva")
     st.markdown("**Nossos Eventos modelados:** Gols • Escanteios • Cartões • Impedimentos, utilizando Distribuição de Poisson. Visualize P(X=k) 0→10, P(X ≥ 5) por evento e compare Times (P(A > B)).")
-    st.markdown("**Lê-se probabilidade de P(X igual a K) 0→10, Probabilidade de P(X ser maior ou igual a 5) por evento e compare Times e suas probabilidades(P(A maior que B)).")
+    st.markdown("**Lê-se probabilidade de P(X igual a K) 0→10, Probabilidade de P(X ser maior ou igual a 5) por evento e compare Times e suas probabilidades(P(A maior que B)).**")
 with col2:
     logo = st.file_uploader("Upload logo (opcional)", type=["png","jpg","jpeg"])
 
@@ -209,7 +209,7 @@ with tab[0]:
 # ----------------------- Tab 2: Tables 0..10 -----------------------
 with tab[1]:
     st.header("📈 Tabelas 0 → 10 — Probabilidades Exatas e Acumuladas")
-    st.markdown("**Cada tabela mostra P(X=k) e P(X ≤ k) em porcentagem (0→10). Esta Tabela representa em porcentagem a probabilidade de o evento ocorrer até 10 vezes.**")
+    st.markdown("Cada tabela mostra P(X=k) e P(X ≤ k) em porcentagem (0→10). Esta Tabela representa em porcentagem a probabilidade de o evento ocorrer até 10 vezes.")
     st.markdown("**Como interpretar?**")
     st.markdown("**P(X=k), é a probabilidade do evento ocorrer igual a 'k' vezes. P(X ≤ k), é a probabilidade de X ser maior ou igual a 'k'. Use para decisões pontuais sobre mercados e volumes.**")
     for ev in events:
@@ -291,6 +291,7 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
 
 
 
