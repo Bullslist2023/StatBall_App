@@ -258,12 +258,12 @@ with tab[2]:
 
 # ----------------------- Tab 4: Comments / Interpretation concise -----------------------
 with tab[3]:
-    st.header("📖 Comentários — Uso e Interpretação (conciso & objetivo)")
+    st.header("📖 Guia Informativo sobre o StatBall e suas aplicações")
     st.markdown("""
-    **Resumo rápido — como usar o StatBall v4**
-    - O app aplica a **Distribuição de Poisson** para estimar a probabilidade de ocorrerem X eventos (0→10) e a chance de ocorrer **pelo menos 5** (P(X ≥ 5)).
-    - Eventos modelados: **Gols, Escanteios, Cartões, Impedimentos**. Impedimentos são recomendados quando busca-se maior aderência à Poisson.
-    - **Interpretação de P(X ≥ 5):** indicam probabilidade de alto volume naquele evento. Use para avaliar mercados de volume (ex.: muitos escanteios).
+    **Resumo rápido — como usar o StatBall Versão 4**
+    - O app aplica a **Distribuição de Poisson** para estimar a probabilidade de ocorrerem X eventos (0→10) e a chance de ocorrer **pelo menos 5 vezes** (P(X ≥ 5)).
+    - Eventos modelados: **Gols, Escanteios, Cartões, Impedimentos**. I
+    - **Interpretação de P(X ≥ 5):** Neste exemplo, X sendo maior que 5, indicam probabilidade de alto volume naquele evento. Use então para avaliar mercados de volume.
     - **P(A > B):** calcula a probabilidade de o Time A registrar mais ocorrências do que o Time B (útil para mercados comparativos).
 
     **Limitações importantes**
@@ -293,6 +293,7 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
 
 
 
