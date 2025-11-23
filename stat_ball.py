@@ -103,7 +103,7 @@ col1, col2 = st.columns([0.82, 0.18])
 with col1:
     st.title("🏆 StatBall v4 — Análise Estatística Esportiva")
     st.markdown("**Nossos Eventos modelados:** Gols • Escanteios • Cartões • Impedimentos, utilizando Distribuição de Poisson. Visualize P(X=k) 0→10, P(X ≥ 5) por evento e compare Times (P(A > B)).")
-    st.markdown("*Lê-se probabilidade de P(X igual a K) 0→10, Probabilidade de P(X ser maior ou igual a 5) por evento e compare Times (P(A maior que B)).")
+    st.markdown("**Lê-se probabilidade de P(X igual a K) 0→10, Probabilidade de P(X ser maior ou igual a 5) por evento e compare Times e suas probabilidades(P(A maior que B)).")
 with col2:
     logo = st.file_uploader("Upload logo (opcional)", type=["png","jpg","jpeg"])
 
@@ -111,16 +111,16 @@ st.divider()
 
 # ----------------------- Sidebar inputs -----------------------
 st.sidebar.header("📥 Entradas — Dados dos Times")
-time_a = st.sidebar.text_input("Nome do Time A", "Time A")
-time_b = st.sidebar.text_input("Nome do Time B", "Time B")
+time_a = st.sidebar.text_input("Nome do Time A", "Digite o Nome do Time A")
+time_b = st.sidebar.text_input("Nome do Time B", "Digite o Nome do Time B")
 
 st.sidebar.markdown("---")
 st.sidebar.subheader(f"{time_a} — médias (históricas)")
 total_matches_a = st.sidebar.number_input("Total jogos (A)", min_value=1, max_value=1000, value=20, step=1)
-media_gols_a = st.sidebar.number_input("⚽ Média de Gols (A)", min_value=0.0, max_value=10.0, value=1.8, step=0.1)
-media_esc_a = st.sidebar.number_input("🚩 Média de Escanteios (A)", min_value=0.0, max_value=50.0, value=6.2, step=0.1)
-media_cart_a = st.sidebar.number_input("🟨 Média de Cartões (A)", min_value=0.0, max_value=20.0, value=2.3, step=0.1)
-media_imp_a = st.sidebar.number_input("🚫 Média de Impedimentos (A)", min_value=0.0, max_value=10.0, value=1.5, step=0.1)
+media_gols_a = st.sidebar.number_input("⚽ Média de Gols (A)", min_value=0.0, max_value=10.0, value=1.1, step=0.1)
+media_esc_a = st.sidebar.number_input("🚩 Média de Escanteios (A)", min_value=0.0, max_value=50.0, value=1.1, step=0.1)
+media_cart_a = st.sidebar.number_input("🟨 Média de Cartões (A)", min_value=0.0, max_value=20.0, value=1.1, step=0.1)
+media_imp_a = st.sidebar.number_input("🚫 Média de Impedimentos (A)", min_value=0.0, max_value=10.0, value=1.1, step=0.1)
 
 st.sidebar.markdown("---")
 st.sidebar.subheader(f"{time_b} — médias (históricas)")
