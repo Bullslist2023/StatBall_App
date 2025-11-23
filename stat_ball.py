@@ -101,7 +101,7 @@ def prob_A_greater_B(muA, muB, k_max=60):
 # ----------------------- UI Header -----------------------
 col1, col2 = st.columns([0.82, 0.18])
 with col1:
-    st.title("🏆 StatBall v4 — Análise Estatística Esportiva")
+    st.title("🏆 StatBall — Análise Estatística Esportiva")
     st.markdown("**Nossos Eventos modelados:** Gols • Escanteios • Cartões • Impedimentos, utilizando Distribuição de Poisson. Visualize P(X=k) 0→10, P(X ≥ 5) por evento e compare Times (P(A > B)).")
     st.markdown("**Lê-se probabilidade de P(X igual a K) 0→10, Probabilidade de P(X ser maior ou igual a 5) por evento e compare Times e suas probabilidades(P(A maior que B)).**")
 with col2:
@@ -271,7 +271,7 @@ with tab[3]:
     - **Amostras pequenas** (menos de 5 jogos) reduzem a confiabilidade dos resultados.
     - Finalizações não estão modeladas aqui, por conta de sua imprevisibilidade, usamos então Impedimentos como alternativa mais estável e adequada para cálculos usando Distribuição de Poisson.
 
-    **Recomendações práticas**
+    **Informações e Recomendações práticas**
     - StatBall tem o intuito de trazer base numérica a sua diversão. Aposta Esportiva tem um elevado risco e por isso deve ser levado a sério. No entanto, é possível dotarmos de conceitos matemáticos para lucrarmos ainda assim.
     - Neste aplicativo utilizamos Distribuição de Poisson, em um conceito amplo, é utilizado para visualizar a probabilidade de um número de evento ocorrer em um determinado espaço ou tempo. Neste caso, uma partida de Futebol em 90 minutos
     - Use médias dos últimos **8–12 jogos** para capturar forma atual.
@@ -293,6 +293,7 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
 
 
 
