@@ -116,7 +116,7 @@ time_b = st.sidebar.text_input("Nome do Time B", "Digite o Nome do Time B")
 
 st.sidebar.markdown("---")
 st.sidebar.subheader(f"{time_a} — médias (históricas)")
-total_matches_a = st.sidebar.number_input("Total jogos (A)", min_value=1, max_value=1000, value=20, step=1)
+total_matches_a = st.sidebar.number_input("Total jogos (A)", min_value=1, max_value=1000, value=0, step=1)
 media_gols_a = st.sidebar.number_input("⚽ Média de Gols (A)", min_value=0.0, max_value=10.0, value=1.1, step=0.1)
 media_esc_a = st.sidebar.number_input("🚩 Média de Escanteios (A)", min_value=0.0, max_value=50.0, value=1.1, step=0.1)
 media_cart_a = st.sidebar.number_input("🟨 Média de Cartões (A)", min_value=0.0, max_value=20.0, value=1.1, step=0.1)
@@ -124,11 +124,11 @@ media_imp_a = st.sidebar.number_input("🚫 Média de Impedimentos (A)", min_val
 
 st.sidebar.markdown("---")
 st.sidebar.subheader(f"{time_b} — médias (históricas)")
-total_matches_b = st.sidebar.number_input("Total jogos (B)", min_value=1, max_value=1000, value=18, step=1)
-media_gols_b = st.sidebar.number_input("⚽ Média de Gols (B)", min_value=0.0, max_value=10.0, value=1.5, step=0.1)
-media_esc_b = st.sidebar.number_input("🚩 Média de Escanteios (B)", min_value=0.0, max_value=50.0, value=5.8, step=0.1)
-media_cart_b = st.sidebar.number_input("🟨 Média de Cartões (B)", min_value=0.0, max_value=20.0, value=2.0, step=0.1)
-media_imp_b = st.sidebar.number_input("🚫 Média de Impedimentos (B)", min_value=0.0, max_value=10.0, value=1.4, step=0.1)
+total_matches_b = st.sidebar.number_input("Total jogos (B)", min_value=1, max_value=1000, value=0, step=1)
+media_gols_b = st.sidebar.number_input("⚽ Média de Gols (B)", min_value=0.0, max_value=10.0, value=1.1, step=0.1)
+media_esc_b = st.sidebar.number_input("🚩 Média de Escanteios (B)", min_value=0.0, max_value=50.0, value=1.1, step=0.1)
+media_cart_b = st.sidebar.number_input("🟨 Média de Cartões (B)", min_value=0.0, max_value=20.0, value=1.1, step=0.1)
+media_imp_b = st.sidebar.number_input("🚫 Média de Impedimentos (B)", min_value=0.0, max_value=10.0, value=1.1, step=0.1)
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("<div class='small-muted'>Nota: use médias de amostras recentes (ex.: últimos 10 jogos) para melhorar confiabilidade.</div>", unsafe_allow_html=True)
@@ -289,3 +289,4 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
