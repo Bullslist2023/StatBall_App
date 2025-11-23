@@ -209,7 +209,8 @@ with tab[0]:
 # ----------------------- Tab 2: Tables 0..10 -----------------------
 with tab[1]:
     st.header("📈 Tabelas 0 → 10 — Probabilidades Exatas e Acumuladas")
-    st.markdown("Cada tabela mostra P(X=k) e P(X ≤ k) em porcentagem (0→10). Use para decisões pontuais sobre mercados e volumes.")
+    st.markdown("Cada tabela mostra P(X=k) e P(X ≤ k) em porcentagem (0→10). Esta Tabela representa em porcentagem a probabilidade de o evento ocorrer até 10 vezes.")
+    st.markdown("Como interpretar? P(X=k), é a probabilidade do evento ocorrer igual a 'k' vezes. P(X ≤ k), é a probabilidade de X ser maior ou igual a 'k'. Use para decisões pontuais sobre mercados e volumes.")
     for ev in events:
         st.subheader(f"🔹 {ev} — {time_a} (Tabela 0→10)")
         t_a = tables_a[ev].rename(columns={"k":"Número de eventos (k)", "P(X=k) (%)":"P(X=k) (%)", "P(X ≤ k) (%)":"P(X ≤ k) (%)"}).set_index("Número de eventos (k)")
@@ -289,5 +290,6 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
 
 
