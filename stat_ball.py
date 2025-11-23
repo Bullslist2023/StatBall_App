@@ -272,6 +272,8 @@ with tab[3]:
     - Finalizações não estão modeladas aqui, por conta de sua imprevisibilidade, usamos então Impedimentos como alternativa mais estável e adequada para cálculos usando Distribuição de Poisson.
 
     **Recomendações práticas**
+    - StatBall tem o intuito de trazer base numérica a sua diversão. Aposta Esportiva tem um elevado risco e por isso deve ser levado a sério. No entanto, é possível dotarmos de conceitos matemáticos para lucrarmos ainda assim.
+    - Neste aplicativo utilizamos Distribuição de Poisson, em um conceito amplo, é utilizado para visualizar a probabilidade de um número de evento ocorrer em um determinado espaço ou tempo. Neste caso, uma partida de Futebol em 90 minutos
     - Use médias dos últimos **8–12 jogos** para capturar forma atual.
     - Combine o StatBall com análise qualitativa (notícias, escalações, estilo tático).
 
@@ -291,6 +293,7 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
 
 
 
