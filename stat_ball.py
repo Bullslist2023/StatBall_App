@@ -225,6 +225,7 @@ with tab[1]:
 with tab[2]:
     st.header("🔍 Probabilidade de Time A ter MAIS que Time B — por evento")
     st.markdown("Clique no botão do evento desejado para calcular P(A > B) com soma até k=60 (precisão adequada para médias típicas).")
+    st.markdown("Nesta seção apresentamos através de cálculos baseados em Distribuição de Poisson, as probabilidades em porcentagens de eventos especiais. Sendo, as chances de Time A ter mais que time B.")
 
     col_btns = st.columns(4)
     event_probs = {}
@@ -291,6 +292,7 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
 
 
 
