@@ -223,7 +223,7 @@ with tab[1]:
 
 # ----------------------- Tab 3: P(A > B) per event (buttons) -----------------------
 with tab[2]:
-    st.header("🔍 Probabilidade de Time A ter MAIS que Time B — por evento")
+    st.header("🔍 Probabilidade de Time A ter MAIS que Time B — Por evento")
     st.markdown("Clique no botão do evento desejado para calcular P(A > B) com soma até k=60 (precisão adequada para médias típicas).")
     st.markdown("Nesta seção apresentamos através de cálculos baseados em Distribuição de Poisson, as probabilidades em porcentagens de eventos especiais. Sendo, as chances de Time A ter mais que time B.")
 
@@ -269,12 +269,11 @@ with tab[3]:
     **Limitações importantes**
     - O modelo **assume independência e homogeneidade** durante o jogo — fatores como tática, árbitro, clima ou lesões não são considerados.
     - **Amostras pequenas** (menos de 5 jogos) reduzem a confiabilidade dos resultados.
-    - Finalizações não estão modeladas aqui (imprevisíveis) — usamos Impedimentos como alternativa mais estável.
+    - Finalizações não estão modeladas aqui, por conta de sua imprevisibilidade, usamos então Impedimentos como alternativa mais estável e adequada para cálculos usando Distribuição de Poisson.
 
     **Recomendações práticas**
     - Use médias dos últimos **8–12 jogos** para capturar forma atual.
     - Combine o StatBall com análise qualitativa (notícias, escalações, estilo tático).
-    - Se desejar, conecte o app a uma base de dados/API para atualizar médias automaticamente (próxima evolução).
 
     **Glossário rápido**
     - *P(X=k)* = probabilidade exata de ocorrer k eventos.
@@ -292,6 +291,7 @@ with tab[3]:
 
 # ----------------------- Footer -----------------------
 st.markdown("<div class='footer'>Desenvolvido por <b>Juan Santos</b> — Versão 4 - Tecnologia ZIP4 Computers</div>", unsafe_allow_html=True)
+
 
 
 
