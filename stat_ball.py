@@ -1,4 +1,4 @@
-# app.py
+# O Gatilho de Arquimedes (Rascunho de atualizações - Comentários mais simples de ser compreendido)
 """
 StatBall v4 - Estatística Esportiva (Gols, Escanteios, Cartões, Impedimentos)
 - Tabelas 0..10
@@ -102,7 +102,8 @@ def prob_A_greater_B(muA, muB, k_max=60):
 col1, col2 = st.columns([0.82, 0.18])
 with col1:
     st.title("🏆 StatBall v4 — Análise Estatística Esportiva")
-    st.markdown("**Eventos modelados:** Gols • Escanteios • Cartões • Impedimentos (Poisson). Visualize P(X=k) 0→10, P(X ≥ 5) por evento e compare Times (P(A > B)).")
+    st.markdown("**Nossos Eventos modelados:** Gols • Escanteios • Cartões • Impedimentos, utilizando Distribuição de Poisson. Visualize P(X=k) 0→10, P(X ≥ 5) por evento e compare Times (P(A > B)).")
+    st.markdown("*Lê-se probabilidade de P(X igual a K) 0→10, Probabilidade de P(X ser maior ou igual a 5) por evento e compare Times (P(A maior que B)).")
 with col2:
     logo = st.file_uploader("Upload logo (opcional)", type=["png","jpg","jpeg"])
 
